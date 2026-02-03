@@ -2,6 +2,9 @@
   --navy: #0b2340;
   --lavender: #8b6fbf;
   --muted: #f6f7fb;
+  --playful-1: #ffd6e0;
+  --playful-2: #d6f4ff;
+  --playful-3: #fff4d6;
   --text: #0f1720;
   --accent-contrast: #ffffff;
   --container-max: 1000px;
@@ -36,3 +39,28 @@ body{font-family:system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
 /* Accessibility helpers */
 a:focus{outline:3px solid var(--lavender); outline-offset:2px}
 button,input,select,textarea{font-family:inherit}
+
+/* Animated background: subtle gradient + floating dots */
+body{
+  background: linear-gradient(135deg, #f7f8fc 0%, #eef4ff 40%, #fffaf2 100%);
+  background-attachment: fixed;
+  position: relative;
+  overflow-x: hidden;
+}
+
+#bg{position:fixed; inset:0; z-index:0; pointer-events:none; overflow:hidden}
+.bg-gradient{position:absolute; inset:-30% -10% auto -10%; background:linear-gradient(120deg, rgba(255,214,224,0.18), rgba(214,244,255,0.12), rgba(255,244,214,0.08)); filter:blur(80px); animation:gradientShift 12s linear infinite alternate}
+
+.container, .site-header, .site-footer, main{position:relative; z-index:1}
+
+.dot{position:absolute; border-radius:40% 60% 50% 60%; opacity:.95; animation:floatUp linear infinite; mix-blend-mode:screen; filter:blur(6px); box-shadow:0 6px 24px rgba(0,0,0,0.08)}
+
+@keyframes gradientShift{from{transform:translateX(-8%)}to{transform:translateX(8%)}}
+
+@keyframes floatUp{from{transform:translateY(0) scale(1); opacity:.9}to{transform:translateY(-140vh) scale(1.15); opacity:0}}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .bg-gradient, .dot{animation: none !important; opacity: .9}
+  .dot{filter:blur(2px)}
+}

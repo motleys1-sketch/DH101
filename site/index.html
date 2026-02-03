@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div id="bg" aria-hidden="true">
+    <div class="bg-gradient"></div>
+  </div>
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="logo" href="index.html">Sarah Motley</a>
@@ -29,11 +32,12 @@
         <p class="lead">International Studies & Spanish — pursuing national security work focused on policy analysis, research, and cross-cultural engagement.</p>
         <p>
           <a class="btn" href="resume.html">View Resume</a>
+          <a class="btn" href="assets/resume.pdf" target="_blank" rel="noopener">Download resume (PDF)</a>
           <a class="btn ghost" href="projects.html">Projects</a>
         </p>
       </div>
       <div class="hero-media">
-        <img src="assets/headshot-placeholder.svg" alt="Headshot placeholder" class="headshot">
+        <img src="assets/headshot.jpg" alt="Portrait of Sarah Motley" class="headshot">
       </div>
     </section>
 
@@ -64,5 +68,31 @@
   </footer>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+  (function(){
+    // playful floating blobs background
+    var bg = document.getElementById('bg');
+    if(!bg) return;
+    var colors = ['rgba(255,214,224,0.95)','rgba(214,244,255,0.95)','rgba(255,244,214,0.95)','rgba(222,196,255,0.95)'];
+    var count = 20;
+    for(var i=0;i<count;i++){
+      var d = document.createElement('div');
+      d.className = 'dot';
+      var w = Math.round(Math.random()*120 + 36);
+      var h = Math.round(w * (0.7 + Math.random()*0.6));
+      d.style.width = w + 'px';
+      d.style.height = h + 'px';
+      d.style.left = (Math.random()*120 - 10) + '%';
+      d.style.bottom = (-20 - Math.random()*40) + '%';
+      var c = colors[Math.floor(Math.random()*colors.length)];
+      d.style.background = 'radial-gradient(circle at 35% 30%, rgba(255,255,255,0.95), ' + c + ')';
+      d.style.borderRadius = (40 + Math.random()*40) + '% ' + (40 + Math.random()*40) + '% ' + (40 + Math.random()*40) + '% ' + (40 + Math.random()*40) + '%';
+      d.style.animationDuration = (Math.random()*18 + 10) + 's';
+      d.style.animationDelay = (Math.random()*6) + 's';
+      d.style.opacity = (0.4 + Math.random()*0.6).toFixed(2);
+      bg.appendChild(d);
+    }
+  })();
+  </script>
 </body>
 </html>
