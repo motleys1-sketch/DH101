@@ -13,6 +13,8 @@
 
 To make these selfies, I used both StableDiffusion's AI image editing software, as well as Adobe Firefly's AI software. StableDiffusion generated the Pop Art Selfie and the Zombie Selfie, while Adobe generated the Degas selfie. I switched to Adobe because I ran out of credits on StableDiffusion. To generate the images, I used the same format of a prompt for each image the software created: "Alter this selfie as if..." For example, for the Zombie Selfie, I said "Alter this selfie as I were in zombie apocalypse." 
 
+the selfie was a zombie apocalypse
+
 
 ## Reflection
 Respond to this week’s reflection prompt in 200–300 words.
