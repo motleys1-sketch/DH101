@@ -1,8 +1,7 @@
 # Week 4 – Comic & Storytelling
 
 ## The Artifact
-Describe or embed your artifact here.
-Include images, links, or media as appropriate.
+![alt text](<Harnold Comic.jpg>)
 
 ## Process Notes
 How did you make this?
