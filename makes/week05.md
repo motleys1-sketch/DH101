@@ -1,7 +1,8 @@
 # Week 5 – GIF & Remix Culture
 
 ## The Artifact
-<video controls src="Gob Magic Show.mp4" title="Title"></video>
+<video controls src="Gob Magic Show-1.mp4" title="Title"></video>
+<video controls src="Gob Loop.mp4" title="Title"></video>
 
 ## Process Notes
 How did you make this? I made this using EZGif
