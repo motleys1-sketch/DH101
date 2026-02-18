@@ -1,19 +1,17 @@
 # Week 5 – GIF & Remix Culture
 
 ## The Artifact
-Describe or embed your artifact here.
-Include images, links, or media as appropriate.
+<video controls src="Gob Magic Show-1.mp4" title="Title"></video>
 
 ## Process Notes
-How did you make this?
-What tools did you use?
-What decisions did you make?
+I used EZGif to create this GIF. I used one of my favorite clips from the TV show "Arrested Development" and selected each frame I wanted to be shown and then changed the delays of each frame to create the effect I wanted. 
+
 
 ## Reflection
 Respond to this week’s reflection prompt in 200–300 words.
 
 ## Attribution & AI Use
-- Tools used:
-- AI prompts (summary):
+- Tools used: EZGif
+- AI prompts (summary): 
 - What AI generated:
 - What you changed or decided:
