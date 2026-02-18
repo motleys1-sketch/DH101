@@ -1,11 +1,10 @@
 # Week 5 – GIF & Remix Culture
 
 ## The Artifact
-Describe or embed your artifact here.
-Include images, links, or media as appropriate.
+<video controls src="Gob Magic Show.mp4" title="Title"></video>
 
 ## Process Notes
-How did you make this?
+How did you make this? I made this using EZGif
 What tools did you use?
 What decisions did you make?
 
