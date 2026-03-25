@@ -42,19 +42,48 @@
     </section>
 
     <section class="container highlights">
-      <h2>Selected Projects & Writing</h2>
+      <h2>At a Glance</h2>
       <div class="grid">
         <article class="card">
-          <h3>Policy Research Paper</h3>
-          <p>Brief description of a capstone or policy analysis project relevant to national security.</p>
+          <h3>About</h3>
+          <p>Senior at Denison University majoring in International Studies and Spanish, with interests in national security, multilateral institutions, and cross-cultural collaboration.</p>
+          <p><a href="about.html">Read more about me</a></p>
         </article>
         <article class="card">
-          <h3>Data viz on regional trends</h3>
-          <p>Short blurb about a data-driven project using Spanish-language sources.</p>
+          <h3>Core Skills</h3>
+          <p>Policy research and analysis, report writing, qualitative methods, and data visualization. Advanced Spanish for research and communication.</p>
+          <p><a href="resume.html">See full resume details</a></p>
         </article>
         <article class="card">
-          <h3>Op-ed / Essay</h3>
-          <p>A short summary of a published or class paper on international affairs.</p>
+          <h3>Current Focus</h3>
+          <p>Seeking national security and policy roles where I can contribute strong research, analytical writing, and global perspective.</p>
+          <p><a href="writing.html">Browse writing</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container highlights">
+      <h2>Featured Work</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Mediterranean Region Policy Memo</h3>
+          <p>Evidence-based memo on why the Mediterranean should be prioritized in U.S. strategy across Europe, MENA, and surrounding regions.</p>
+          <p><a href="https://drive.google.com/file/d/1RJzcpSFPV8l8sm_M4IAZw5Wj332I4D6W/view?usp=drive_link" target="_blank" rel="noopener">Read memo</a></p>
+        </article>
+        <article class="card">
+          <h3>The Eagle and the Condor</h3>
+          <p>Research on U.S. intervention in Cold War Latin America, with analysis of Operation Condor using declassified and quantitative sources.</p>
+          <p><a href="https://drive.google.com/file/d/1wCejZuoXr9TVBR7TW-_K_J3lzRUolylX/view?usp=drive_link" target="_blank" rel="noopener">Read paper</a></p>
+        </article>
+        <article class="card">
+          <h3>Digital Humanities Projects</h3>
+          <p>Creative media and AI-assisted work, including a loop animation and stylized visual experiments.</p>
+          <p><a href="projects.html">View project gallery</a></p>
+        </article>
+        <article class="card">
+          <h3>Writing Collection</h3>
+          <p>Policy-focused essays, short analyses, and ongoing writing samples in one place.</p>
+          <p><a href="writing.html">Open writing page</a></p>
         </article>
       </div>
     </section>
@@ -68,6 +97,11 @@
   </footer>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      document.querySelectorAll('.container').forEach(function(c){ c.classList.add('loaded'); });
+    });
+  </script>
   <script>
   (function(){
     // playful floating blobs background
