@@ -1,1 +1,1 @@
-Link to Game on itch.io: https://smotley22.itch.io/sunday-en-wyoming
+Link to Game on itch.io: https://sarahmotley22.itch.io/sunday-en-wyoming
